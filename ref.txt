@@ -1,0 +1,13 @@
+npm install -g express-generator
+express --view=ejs
+npm install (--no-bin-links for vagrant)
+PORT=8080 npm start on local
+
+pip install --upgrade --user awsebcli
+export PATH=~/.local/bin:$PATH
+source ~/.bash_profile
+
+eb init --platform node.js --region us-east-1
+eb create --sample node-express-env
+
+eb deploy
