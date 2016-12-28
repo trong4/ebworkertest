@@ -8,6 +8,6 @@ export PATH=~/.local/bin:$PATH
 source ~/.bash_profile
 
 eb init --platform node.js --region us-east-1
-eb create --sample node-express-env
+eb create -t worker
 
 eb deploy
