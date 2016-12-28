@@ -8,14 +8,8 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function(req, res, next) {
     console.log(new Date())
-    console.log("receiving job on root path /")
-    console.log("query", req.query)
-    console.log("body", req.body)
-    console.log("name", req.body.name)
-    console.log("title", req.body.title)
-    setTimeout(function(){
-        res.send({ok:true})
-    }, 1810000) // 30+ min later
+    console.log(req.body)
+    res.send({ok:true})
 });
 
 module.exports = router;
