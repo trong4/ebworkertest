@@ -9,5 +9,5 @@ source ~/.bash_profile
 
 eb init --platform node.js --region us-east-1
 eb create -t worker
-
+eb ssh env-name
 eb deploy
