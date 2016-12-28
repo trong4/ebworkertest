@@ -3,6 +3,10 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+    res.render('index', { title: 'hello worker' });
+});
+
+router.post('/', function(req, res, next) {
     console.log("receiving job on root path /")
     console.log("query", req.query)
     console.log("body", req.body)
